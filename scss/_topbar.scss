@@ -2,10 +2,19 @@
     display: flex;
     position: fixed;
     top: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: $unit $padding;
 }
 
 #topbar__toggle {
     display: none;
+}
+
+#topbar__label {
+    color: white;
+    height: 24px;
 }
 
 .nav__left {
