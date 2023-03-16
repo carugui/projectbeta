@@ -136,6 +136,10 @@ h6,
   font-size: 1rem;
 }
 
+span {
+  color: var(--color-orange);
+}
+
 .topbar {
   display: -webkit-box;
   display: -ms-flexbox;
