@@ -1,3 +1,133 @@
 @import "_custom-properties";
 @import "site/_site";
+@import "_headers";
+@import "_typography";
 
+
+/* COLORES */
+.color-green {
+    color: #4C956C;
+}
+.bg-color-green {
+    background-color: #4C956C;
+}
+
+.color-green-dark {
+    color: #2C6E49;
+}
+.bg-color-green-dark {
+    background-color: #2C6E49;
+}
+
+.color-orange {
+    color: #F4A261;
+}
+.bg-color-orange {
+    background-color: #F4A261;
+}
+
+.color-orange-dark {
+    color: #E76F51;
+}
+.bg-color-orange-dark {
+    background-color: #E76F51;
+}
+
+.color-yellow {
+    color: #E9C46A;
+}
+.bg-color-yellow {
+    background-color: #E9C46A;
+}
+
+.color-blue {
+    color: #37A3BB;
+}
+.bg-color-blue {
+    background-color: #37A3BB;
+}
+
+
+a {
+    color: #FC8455;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+a:visited {
+    color: #7A731C;
+}
+
+a:hover {
+    text-decoration-thickness: 4px;
+}
+
+button,
+.btn {
+    display: inline-block;
+    padding: 0.4rem 2rem;
+    background-color: #2C6E49;
+    border: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 13px;
+    line-height: 2;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #4C956C;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: #2C6E49;
+    border: 2px solid #2C6E49;
+}
+
+.btn--secondary:hover {
+    background-color: transparent;
+    font-weight: 800;
+}
+
+.btn:visited {
+    color: white;
+}
+
+.btn--secondary:visited {
+    color: #3A3A3A;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    
+}
+
+input[type="text"], input[type="email"], textarea {
+    background-color: rgba(213, 213, 213, 0.60);
+    color: #494949;
+    border: none;
+    border-width: 2px;
+    border-radius: 25px;
+    padding: 10px 13px;
+    align-self: stretch;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: none;
+    background-color: rgba(213, 213, 213, 1);
+
+}
+
+textarea {
+    height: 240px;
+}
