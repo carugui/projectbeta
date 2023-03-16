@@ -225,3 +225,9 @@ button:hover,
 .btn--secondary:visited {
   color: var(--color-grey);
 }
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
