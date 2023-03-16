@@ -4,6 +4,7 @@
 @import "_headers";
 @import "_typography";
 @import "_topbar";
+@import "_header";
 @import "_forms";
 @import "_links";
 @import "_buttons";
@@ -11,17 +12,4 @@
 
 main > section {
     padding: 0 $padding;
-}
-
-.header__landing {
-    background-image: url("../images/vinilisimo-header-background.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: center center;
-    color: white;
-    padding: $padding;
-    height: 70vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
 }
