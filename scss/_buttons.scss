@@ -1,0 +1,40 @@
+button,
+.btn {
+    display: inline-block;
+    padding: 0.4rem 2rem;
+    background-color: #2C6E49;
+    border: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 13px;
+    line-height: 2;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #4C956C;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: #2C6E49;
+    border: 2px solid #2C6E49;
+}
+
+.btn--secondary:hover {
+    background-color: transparent;
+    font-weight: 800;
+}
+
+.btn:visited {
+    color: white;
+}
+
+.btn--secondary:visited {
+    color: #3A3A3A;
+}
