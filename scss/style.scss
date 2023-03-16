@@ -7,25 +7,3 @@
 @import "_forms";
 @import "_links";
 @import "_buttons";
-
-.topbar {
-    display: flex;
-
-}
-
-#topbar__toggle {
-    display: none;
-}
-
-.nav__left {
-    display: none;
-}
-
-#topbar__toggle:checked + .nav__left{
-    display: flex;
-    flex-direction: column;
-}
-
-#nav__right__make-your-vinyl {
-    display: none;
-}

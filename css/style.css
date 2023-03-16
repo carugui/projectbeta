@@ -253,31 +253,3 @@ button:hover,
 .btn--secondary:visited {
   color: var(--color-grey);
 }
-
-.topbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#topbar__toggle {
-  display: none;
-}
-
-.nav__left {
-  display: none;
-}
-
-#topbar__toggle:checked + .nav__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#nav__right__make-your-vinyl {
-  display: none;
-}
