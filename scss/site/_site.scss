@@ -10,6 +10,10 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    text-align: center;
+}
+
 main > section {
     padding: 0 $padding;
 }
