@@ -286,6 +286,7 @@ footer ul {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 15px;
+  fill: white;
 }
 
 .formulario {
