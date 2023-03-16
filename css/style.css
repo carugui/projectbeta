@@ -29,52 +29,64 @@ body {
 }
 
 /* COLORES */
+/* greens */
 .color-green {
-  color: #4C956C;
+  color: var(--color-green);
 }
 
 .bg-color-green {
-  background-color: #4C956C;
+  background-color: var(--color-green);
 }
 
 .color-green-dark {
-  color: #2C6E49;
+  color: var(--color-green-dark);
 }
 
 .bg-color-green-dark {
-  background-color: #2C6E49;
+  background-color: var(--color-green-dark);
 }
 
+/* oranges */
 .color-orange {
-  color: #F4A261;
+  color: var(--color-orange);
 }
 
 .bg-color-orange {
-  background-color: #F4A261;
+  background-color: var(--color-orange);
 }
 
 .color-orange-dark {
-  color: #E76F51;
+  color: var(--color-orange-dark);
 }
 
 .bg-color-orange-dark {
-  background-color: #E76F51;
+  background-color: var(--color-orange-dark);
 }
 
+/* yellows */
 .color-yellow {
-  color: #E9C46A;
+  color: var(--color-yellow);
 }
 
 .bg-color-yellow {
-  background-color: #E9C46A;
+  background-color: var(--color-yellow);
 }
 
+.color-yellow-light {
+  color: var(--color-yellow-light);
+}
+
+.bg-color-yellow-light {
+  background-color: var(--color-yellow-light);
+}
+
+/* blues */
 .color-blue {
-  color: #37A3BB;
+  color: var(--color-blue);
 }
 
 .bg-color-blue {
-  background-color: #37A3BB;
+  background-color: var(--color-blue);
 }
 
 h1,
