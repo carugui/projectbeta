@@ -1,6 +1,7 @@
 .topbar {
     display: flex;
-
+    position: fixed;
+    top: 0;
 }
 
 #topbar__toggle {
