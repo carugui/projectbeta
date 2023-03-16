@@ -189,7 +189,7 @@ button,
 .btn {
   display: inline-block;
   padding: 0.4rem 2rem;
-  background-color: #2C6E49;
+  background-color: var(--color-green-dark);
   border: none;
   text-decoration: none;
   color: white;
@@ -204,13 +204,13 @@ button,
 
 button:hover,
 .btn:hover {
-  background-color: #4C956C;
+  background-color: var(--color-green);
 }
 
 .btn--secondary {
   background-color: transparent;
-  color: #2C6E49;
-  border: 2px solid #2C6E49;
+  color: var(--color-green-dark);
+  border: 2px solid var(--color-green-dark);
 }
 
 .btn--secondary:hover {
@@ -223,5 +223,5 @@ button:hover,
 }
 
 .btn--secondary:visited {
-  color: #3A3A3A;
+  color: var(--color-grey);
 }
