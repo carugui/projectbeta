@@ -460,3 +460,9 @@ button:hover,
           flex-direction: row;
   gap: 15px;
 }
+
+.section__playlist-to-vinyl img {
+  width: 230px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
