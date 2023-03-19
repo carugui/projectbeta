@@ -380,15 +380,6 @@ button:hover,
   color: var(--color-grey);
 }
 
-.section__playlist-to-vinyl {
-  padding: 0;
-}
-
-.section__playlist-to-vinyl__content {
-  background-color: var(--color-yellow-light);
-  padding: 15px 30px;
-}
-
 .waves {
   fill: var(--color-yellow-light);
   position: relative;
@@ -430,4 +421,12 @@ button:hover,
     -webkit-transform: translate3d(85px, 0, 0);
             transform: translate3d(85px, 0, 0);
   }
+}
+.section__playlist-to-vinyl {
+  padding: 0;
+}
+
+.section__playlist-to-vinyl__content {
+  background-color: var(--color-yellow-light);
+  padding: 15px 30px;
 }
