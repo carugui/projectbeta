@@ -422,11 +422,41 @@ button:hover,
             transform: translate3d(85px, 0, 0);
   }
 }
-.section__playlist-to-vinyl {
+.no-padding {
   padding: 0;
 }
 
-.section__playlist-to-vinyl__content {
-  background-color: var(--color-yellow-light);
+.regular-padding {
   padding: 15px 30px;
+}
+
+.section__how-it-works__content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#60B8CC), to(rgba(55, 163, 187, 0)));
+  background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);
+}
+
+.section__how-it-works__content h2 {
+  color: white;
+}
+
+.section__how-it-works .waves {
+  fill: #60B8CC;
+}
+
+.section__how-it-works img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.how-it-works__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
 }

@@ -11,14 +11,36 @@
 @import "_buttons";
 @import "_svg-animations";
 
-
-
-.section__playlist-to-vinyl {
+.no-padding {
     padding: 0;
 }
 
-.section__playlist-to-vinyl__content {
-    background-color: var(--color-yellow-light);
+.regular-padding {
     padding: $unit $padding;
 }
+
+.section__how-it-works__content {
+    background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);
+}
+
+.section__how-it-works__content h2 {
+    color: white;
+}
+
+.section__how-it-works .waves {
+    fill: #60B8CC;
+}
+
+.section__how-it-works img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.how-it-works__item {
+    display: flex;
+    flex-direction: row;
+    gap: $unit;
+}
+
 
