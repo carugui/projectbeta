@@ -466,3 +466,10 @@ button:hover,
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
+
+.section__playlist-to-vinyl p, .section__reviews p {
+  font-family: "Gloria Hallelujah";
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
