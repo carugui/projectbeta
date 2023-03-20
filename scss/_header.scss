@@ -33,7 +33,7 @@ header p {
     color: white;
     text-align: center;
     padding: $padding;
-    padding-top: calc($padding * 2);
+    padding-top: $unit-double;
 }
 
 .header__wave .waves {
