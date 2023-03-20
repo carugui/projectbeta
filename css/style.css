@@ -45,6 +45,13 @@ main > section {
   margin-bottom: 30px;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 /* COLORES */
 /* greens */
 .color-green {
@@ -504,13 +511,6 @@ button:hover,
 
 .section__how-it-works .waves {
   fill: #60B8CC;
-}
-
-.section__how-it-works img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .how-it-works__item {
