@@ -463,6 +463,10 @@ button:hover,
   color: var(--color-grey);
 }
 
+.btn--blog {
+  background-color: var(--color-orange);
+}
+
 .waves {
   fill: var(--color-yellow-light);
   position: relative;
