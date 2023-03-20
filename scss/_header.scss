@@ -31,10 +31,14 @@ header p {
 
 // HEADER CON WAVE (ABOUT)
 
+.header__wave {
+    padding: 0;
+}
 .header__wave .header__content {
     background-color: var(--color-green);
     color: white;
     text-align: center;
+    padding: $padding;
     padding-top: $unit-double;
 }
 
