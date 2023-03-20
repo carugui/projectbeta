@@ -320,7 +320,7 @@ footer ul {
   fill: white;
 }
 
-.formulario {
+.form__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,16 +332,55 @@ footer ul {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0px;
-  gap: 12px;
+  gap: 15px;
+}
+.form__main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+.form__main__upper-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.form__main__input {
+  gap: 5px;
+}
+.form__main label {
+  font-size: 1rem;
+}
+
+.btn-form {
+  background-color: var(--color-orange);
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
 input[type=text], input[type=email], textarea {
   background-color: rgba(213, 213, 213, 0.6);
-  color: #494949;
+  color: var(--color-grey);
+  font-size: 1rem;
   border: none;
   border-width: 2px;
-  border-radius: 25px;
-  padding: 10px 13px;
+  border-radius: 15px;
+  padding: 12px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
@@ -354,6 +393,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 textarea {
   height: 240px;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
