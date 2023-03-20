@@ -15,6 +15,14 @@
   --background-color: var(--color-cream);
 }
 
+.no-padding {
+  padding: 0;
+}
+
+.regular-padding {
+  padding: 15px 30px;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -422,14 +430,6 @@ button:hover,
             transform: translate3d(85px, 0, 0);
   }
 }
-.no-padding {
-  padding: 0;
-}
-
-.regular-padding {
-  padding: 15px 30px;
-}
-
 .section__how-it-works__content {
   background: -webkit-gradient(linear, left top, left bottom, from(#60B8CC), to(rgba(55, 163, 187, 0)));
   background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);

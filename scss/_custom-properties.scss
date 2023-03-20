@@ -17,3 +17,11 @@
 
 $unit: 15px;
 $padding: $unit * 2;
+
+.no-padding {
+    padding: 0;
+}
+
+.regular-padding {
+    padding: $unit $padding;
+}

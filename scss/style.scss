@@ -11,14 +11,6 @@
 @import "_buttons";
 @import "_svg-animations";
 
-.no-padding {
-    padding: 0;
-}
-
-.regular-padding {
-    padding: $unit $padding;
-}
-
 .section__how-it-works__content {
     background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);
 }
