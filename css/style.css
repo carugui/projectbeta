@@ -206,6 +206,13 @@ span {
   display: none;
 }
 
+header p {
+  font-family: "Gloria Hallelujah";
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 .header__landing {
   background-image: url("../images/vinilisimo-header-background.jpg");
   background-repeat: no-repeat;
@@ -224,11 +231,16 @@ span {
   border-radius: 0px 0px 30px 30px;
 }
 
-.header__landing p {
-  font-family: "Gloria Hallelujah";
-  font-weight: 400;
-  font-size: 1rem;
-  text-transform: uppercase;
+.header__wave .header__content {
+  background-color: var(--color-green);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  padding-top: 60px;
+}
+
+.header__wave .waves {
+  fill: var(--color-green);
 }
 
 .pre-footer {
