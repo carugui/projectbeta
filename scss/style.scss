@@ -62,9 +62,26 @@
     text-transform: uppercase;
 }
 
+
+// SECCIONES FORM
+
 .section__form img {
     width: 170px;
 }
+
+// SECCIONES BLOG
+
+.article__blog__thumbnail {
+    padding: $padding;
+    margin-bottom: $unit-double;
+    text-align: left;
+
+    & img {
+        border-radius: 30px;
+    }
+
+}
+
 
 
 
