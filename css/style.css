@@ -207,6 +207,10 @@ span {
   display: none;
 }
 
+header {
+  padding: 15px 30px;
+}
+
 header p {
   font-family: "Gloria Hallelujah";
   font-weight: 400;
@@ -220,7 +224,6 @@ header p {
   background-size: cover;
   background-position: center center;
   color: white;
-  padding: 15px 30px;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,12 +239,16 @@ header p {
   background-color: var(--color-green);
   color: white;
   text-align: center;
-  padding: 15px 30px;
   padding-top: 30px;
 }
 
 .header__wave .waves {
   fill: var(--color-green);
+}
+
+.header__classic {
+  text-align: center;
+  padding-top: 30px;
 }
 
 .pre-footer {

@@ -1,5 +1,9 @@
 // TODOS LOS HEADER
 
+header {
+    padding: $padding;
+}
+
 header p {
     font-family: 'Gloria Hallelujah';
     font-weight: 400;
@@ -17,7 +21,6 @@ header p {
     background-size: cover;
     background-position: center center;
     color: white;
-    padding: $padding;
     height: 70vh;
     display: flex;
     flex-wrap: wrap;
@@ -26,16 +29,23 @@ header p {
 }
 
 
-// HEADER DE ABOUT
+// HEADER CON WAVE (ABOUT)
 
 .header__wave .header__content {
     background-color: var(--color-green);
     color: white;
     text-align: center;
-    padding: $padding;
     padding-top: $unit-double;
 }
 
 .header__wave .waves {
     fill: var(--color-green);
+}
+
+
+// HEADER CLASSIC (CONTACT, BLOG)
+
+.header__classic {
+    text-align: center;
+    padding-top: $unit-double;
 }
