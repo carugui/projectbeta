@@ -41,7 +41,8 @@ main {
 }
 
 main > section {
-  padding: 0 30px;
+  padding: 30px;
+  margin-bottom: 30px;
 }
 
 /* COLORES */
@@ -483,5 +484,20 @@ button:hover,
   font-family: "Gloria Hallelujah";
   font-weight: 400;
   font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.section__our-mission {
+  background-color: var(--color-yellow-light);
+  border-radius: 30px;
+}
+.section__our-mission__item {
+  margin-bottom: 30px;
+}
+
+.section__our-mission p {
+  font-family: "Gloria Hallelujah";
+  font-weight: 400;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }

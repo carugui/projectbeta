@@ -11,6 +11,8 @@
 @import "_buttons";
 @import "_svg-animations";
 
+// SECCIONES INDEX
+
 .section__how-it-works__content {
     background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);
 }
@@ -46,6 +48,24 @@
     font-size: 1rem;
     text-transform: uppercase;
 }
+
+// SECCIONES ABOUT
+
+.section__our-mission {
+    background-color: var(--color-yellow-light);
+    border-radius: 30px;
+    &__item {
+        margin-bottom: $padding;
+    }
+}
+
+.section__our-mission p {
+    font-family: 'Gloria Hallelujah';
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
 
 
 
