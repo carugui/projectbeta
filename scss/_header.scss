@@ -2,7 +2,14 @@
 
 header {
     padding: $padding;
+
+    
 }
+
+.header__content {
+    max-width: 500px;
+}
+
 
 header p {
     font-family: 'Gloria Hallelujah';
@@ -53,4 +60,8 @@ header p {
 .header__classic {
     text-align: center;
     padding-top: $unit-double;
+    
+    & .header__content {
+        margin: auto;
+    }
 }

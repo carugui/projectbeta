@@ -219,6 +219,10 @@ header {
   padding: 15px 30px;
 }
 
+.header__content {
+  max-width: 500px;
+}
+
 header p {
   font-family: "Gloria Hallelujah";
   font-weight: 400;
@@ -262,6 +266,9 @@ header p {
 .header__classic {
   text-align: center;
   padding-top: 30px;
+}
+.header__classic .header__content {
+  margin: auto;
 }
 
 .pre-footer {
