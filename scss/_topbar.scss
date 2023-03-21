@@ -80,6 +80,8 @@ $topbar--white-color: white;
 
 .topbar--white {
 
+    background-color: transparent;
+
     #topbar__label {
         fill: $topbar--white-color;
     }

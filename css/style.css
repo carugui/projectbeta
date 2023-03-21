@@ -252,6 +252,9 @@ span {
   display: none;
 }
 
+.topbar--white {
+  background-color: transparent;
+}
 .topbar--white #topbar__label {
   fill: white;
 }
