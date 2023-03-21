@@ -1,24 +1,56 @@
+
+// TOPBAR GENERAL
+
+$topbar-color: var(--color-grey);
+
+
+
 .topbar {
+    background-color: var(--background-color);
     display: flex;
     position: fixed;
     top: 0;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    padding: $unit $padding;
+    padding: $padding;
+
+    & nav a {
+        color: $topbar-color;
+        text-decoration: none;
+    
+        &:visited {
+            color: $topbar-color;
+        }
+    }
+
 }
 
-#topbar__toggle {
+#vinilisimo-logo {
+    fill: $topbar-color;
+}
+
+#topbar__toggle {  
     display: none;
+    fill: $topbar-color;
 }
 
 #topbar__label {
-    color: white;
+    color: $topbar-color;
     height: 24px;
 }
 
+
+
 .nav__left {
     display: none;
+    position: fixed;
+    top: 50px;
+        
+    & a {
+        color: $topbar-color;
+        text-decoration: none;
+    }
 }
 
 #topbar__toggle:checked + .nav__left{
@@ -26,7 +58,70 @@
     flex-direction: column;
 }
 
+.nav__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $unit-double;
+}
+
+#shopping-cart {
+    fill: $topbar-color
+}
+
 #nav__right__make-your-vinyl {
     display: none;
 }
 
+
+// TOPBAR--WHITE
+
+$topbar--white-color: white;
+
+.topbar--white {
+
+    #topbar__label {
+        fill: $topbar--white-color;
+    }
+
+    & nav a {
+        color: $topbar--white-color;
+    
+        &:visited {
+            color:$topbar--white-color;
+        }
+    }
+
+    .nav__left a {
+        color: $topbar--white-color;
+    }
+
+    #vinilisimo-logo {
+        fill: $topbar--white-color;
+    }
+
+    #shopping-cart {
+        fill: $topbar--white-color;
+    }
+
+}
+
+@media screen and (min-width: $bp-desktop) {
+
+    .nav__left {
+        display: block;
+    }
+
+    #topbar__label {
+        display: none;
+    }
+
+    #nav__right__make-your-vinyl {
+        display: block;
+    }
+
+    #nav__left__make-your-vinyl {
+        display: none;
+    }
+
+}

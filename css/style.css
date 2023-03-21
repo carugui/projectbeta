@@ -173,6 +173,7 @@ span {
 }
 
 .topbar {
+  background-color: var(--background-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,20 +186,38 @@ span {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  padding: 15px 15px 30px;
+  padding: 15px 30px;
+}
+.topbar nav a {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+.topbar nav a:visited {
+  color: var(--color-grey);
+}
+
+#vinilisimo-logo {
+  fill: var(--color-grey);
 }
 
 #topbar__toggle {
   display: none;
+  fill: var(--color-grey);
 }
 
 #topbar__label {
-  color: white;
+  color: var(--color-grey);
   height: 24px;
 }
 
 .nav__left {
   display: none;
+  position: fixed;
+  top: 50px;
+}
+.nav__left a {
+  color: var(--color-grey);
+  text-decoration: none;
 }
 
 #topbar__toggle:checked + .nav__left {
@@ -211,10 +230,61 @@ span {
           flex-direction: column;
 }
 
+.nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+#shopping-cart {
+  fill: var(--color-grey);
+}
+
 #nav__right__make-your-vinyl {
   display: none;
 }
 
+.topbar--white #topbar__label {
+  fill: white;
+}
+.topbar--white nav a {
+  color: white;
+}
+.topbar--white nav a:visited {
+  color: white;
+}
+.topbar--white .nav__left a {
+  color: white;
+}
+.topbar--white #vinilisimo-logo {
+  fill: white;
+}
+.topbar--white #shopping-cart {
+  fill: white;
+}
+
+@media screen and (min-width: 900px) {
+  .nav__left {
+    display: block;
+  }
+  #topbar__label {
+    display: none;
+  }
+  #nav__right__make-your-vinyl {
+    display: block;
+  }
+  #nav__left__make-your-vinyl {
+    display: none;
+  }
+}
 header {
   padding: 15px 30px;
 }
