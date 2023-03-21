@@ -566,13 +566,24 @@ button:hover,
   width: 170px;
 }
 
-.article__blog__thumbnail {
+.article__blog--thumbnail, .article__blog--single {
   padding: 15px 30px;
   margin-bottom: 30px;
   text-align: left;
 }
-.article__blog__thumbnail img {
+.article__blog--thumbnail img, .article__blog--single img {
   border-radius: 30px;
+}
+
+.blog__time {
+  font-family: "Gloria Hallelujah", sans-serif;
+}
+.blog__subheader {
+  text-align: center;
+  font-family: "Gloria Hallelujah", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin: 1.6rem 0;
 }
 
 .section__FAQ > h2 {

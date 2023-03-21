@@ -71,7 +71,7 @@
 
 // SECCIONES BLOG
 
-.article__blog__thumbnail {
+.article__blog--thumbnail, .article__blog--single {
     padding: $padding;
     margin-bottom: $unit-double;
     text-align: left;
@@ -81,6 +81,24 @@
     }
 
 }
+
+.blog {
+
+    &__time {
+        font-family: 'Gloria Hallelujah', sans-serif;
+    }
+
+    &__subheader {
+        text-align: center;
+        font-family: 'Gloria Hallelujah', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        margin: 1.6rem 0;
+    }
+}
+
+
+
 
 
 .section__FAQ {
