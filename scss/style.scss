@@ -15,6 +15,11 @@
 
 .section__how-it-works__content {
     background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);
+
+
+    & img {
+        max-width: 700px;
+    }
 }
 
 .section__how-it-works__content h2 {
@@ -31,6 +36,7 @@
     display: flex;
     flex-direction: row;
     gap: $unit;
+
 }
 
 .section__playlist-to-vinyl img {

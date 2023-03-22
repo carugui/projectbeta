@@ -457,6 +457,9 @@ header p {
   text-align: center;
   padding: 15px 30px;
   margin-bottom: 30px;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -700,7 +703,6 @@ button:hover,
   fill: var(--color-yellow-light);
   position: relative;
   width: 100%;
-  height: 15vh;
   margin-bottom: -7px; /*Fix for safari gap*/
   height: 40px;
   min-height: 40px;
@@ -738,9 +740,19 @@ button:hover,
             transform: translate3d(85px, 0, 0);
   }
 }
+@media screen and (min-width: 900px) {
+  .waves {
+    height: 15vh;
+    min-height: 100px;
+    max-height: 150px;
+  }
+}
 .section__how-it-works__content {
   background: -webkit-gradient(linear, left top, left bottom, from(#60B8CC), to(rgba(55, 163, 187, 0)));
   background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);
+}
+.section__how-it-works__content img {
+  max-width: 700px;
 }
 
 .section__how-it-works__content h2 {
