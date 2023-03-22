@@ -67,7 +67,7 @@ $topbar-color: var(--color-grey);
     &__item {
         display: block;
         margin: 2rem 4rem;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         color: white;
         text-decoration: none;
     }
@@ -215,6 +215,11 @@ $topbar--white-color: white;
 }
 
 @media screen and (min-width: $bp-desktop) {
+
+    .topbar {
+        padding-left: $unit-double*2;
+        padding-right: $unit-double*2;
+    }
 
     .nav__left {
         transform: 0;

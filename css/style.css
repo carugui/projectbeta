@@ -273,7 +273,7 @@ span {
 .nav__left__item {
   display: block;
   margin: 2rem 4rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: white;
   text-decoration: none;
 }
@@ -392,6 +392,10 @@ span {
 }
 
 @media screen and (min-width: 900px) {
+  .topbar {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .nav__left {
     -webkit-transform: 0;
             transform: 0;
