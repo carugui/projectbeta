@@ -16,6 +16,10 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+
+    &:visited {
+        color: white;
+    }
 }
 
 footer .waves {
@@ -48,9 +52,36 @@ footer ul {
     font-size: 0.75rem;
 }
 
+.main-footer__fine-print ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .main-footer__social-media ul{
     display: flex;
     flex-direction: row;
     gap: $unit;
     fill: white;
+}
+
+@media screen and (min-width: $bp-desktop) {
+
+    .main-footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: calc($unit-double*2);
+
+        &__nav ul {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        &__social-media ul {
+            flex-direction: column;
+        }
+    }
+
+
+
 }

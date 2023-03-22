@@ -467,6 +467,9 @@ footer a {
   color: white;
   text-decoration: none;
 }
+footer a:visited {
+  color: white;
+}
 
 footer .waves {
   fill: var(--color-orange);
@@ -510,6 +513,17 @@ footer ul {
   font-size: 0.75rem;
 }
 
+.main-footer__fine-print ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
 .main-footer__social-media ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,6 +536,31 @@ footer ul {
   fill: white;
 }
 
+@media screen and (min-width: 900px) {
+  .main-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 60px;
+  }
+  .main-footer__nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+  }
+  .main-footer__social-media ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .form__main {
   display: -webkit-box;
   display: -ms-flexbox;
