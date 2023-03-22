@@ -1,3 +1,5 @@
+// PARA LOS ACORDEONES DEL FAQ
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -17,6 +19,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
+// PARA EL MENÚ AMBURGUESA DEL NAVEGADOR IZQUIERDA DEL TOPBAR
 
 const topbar = document.querySelector(".topbar");
 const menu = document.querySelector(".nav__left");
@@ -46,4 +50,16 @@ menuItems.forEach(
     menuItem.addEventListener("click", toggleMenu);
   }
 )
+
+
+window.onscroll = function () { 
+    if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
+        topbar.classList.add("topbar--scroll");
+        topbar.classList.remove("nav-transparent");
+    } 
+    else {
+        topbar.classList.add("nav-transparent");
+        topbar.classList.remove("topbar--scroll");
+    }
+};
 

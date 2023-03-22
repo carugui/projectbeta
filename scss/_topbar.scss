@@ -5,10 +5,11 @@ $topbar-color: var(--color-grey);
 
 
 .topbar {
-    background-color: var(--background-color);
     display: flex;
     position: fixed;
     top: 0;
+    background-color: transparent;
+    transition: background-color 200ms linear;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
@@ -57,7 +58,8 @@ $topbar-color: var(--color-grey);
     left: 0;
     width: 100vw;
     z-index: 99;
-    background: black;
+    background-color: var(--background-color);
+    border-bottom: dashed $topbar-color;
     color: white;
     list-style: none;
     padding-top: 4rem;
@@ -117,7 +119,7 @@ $topbar--white-color: white;
 
     background-color: transparent;
 
-    #topbar__label {
+    & #topbar__label {
         fill: $topbar--white-color;
     }
 
@@ -135,22 +137,26 @@ $topbar--white-color: white;
     }
 
 
-    .hamburger__icon {
+    & .hamburger__icon {
         fill: $topbar--white-color;
     }
 
-    #vinilisimo-logo {
+    & #vinilisimo-logo {
         fill: $topbar--white-color;
     }
 
-    #shopping-cart {
+    & #shopping-cart {
         fill: $topbar--white-color;
     }
 
 }
 
-
+// CLASES DE TOPBAR QUE SE IMPLEMENTAN EN JAVASCRIPT PARA EL MENÚ HAMBURGUESA
 .topbar--classic {
+
+    & .hamburger__icon {
+        fill: $topbar-color;
+    }
 
     & #vinilisimo-logo {
         fill: $topbar-color;
@@ -160,12 +166,51 @@ $topbar--white-color: white;
         fill: $topbar-color;
     }
 
+    & nav a {
+        color: $topbar-color;
+    
+        &:visited {
+            color: $topbar-color;
+        }
+    }
+
+
 }
   
 .showMenu {
     opacity: 1;
     transform: translateY(0);
     transition-delay: opacity 1s;
+}
+
+
+// TOPBAR ON SCROLL
+
+.topbar--scroll {
+    background-color: var(--background-color);
+    border-bottom: dashed $topbar-color;
+    transition: background-color 200ms linear;
+
+    & .hamburger__icon {
+        fill: $topbar-color;
+    }
+
+    & #vinilisimo-logo {
+        fill: $topbar-color;
+    }
+
+    & #shopping-cart {
+        fill: $topbar-color;
+    }
+
+    & nav a {
+        color: $topbar-color;
+    
+        &:visited {
+            color: $topbar-color;
+        }
+    }
+
 }
 
 @media screen and (min-width: $bp-desktop) {
@@ -182,6 +227,7 @@ $topbar--white-color: white;
         background-color: transparent;
         width: auto;
         height: auto;
+        border-bottom: none;
 
         &__item {
             margin: 0;

@@ -173,12 +173,14 @@ span {
 }
 
 .topbar {
-  background-color: var(--background-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 0;
+  background-color: transparent;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -228,7 +230,8 @@ span {
   left: 0;
   width: 100vw;
   z-index: 99;
-  background: black;
+  background-color: var(--background-color);
+  border-bottom: dashed var(--color-grey);
   color: white;
   list-style: none;
   padding-top: 4rem;
@@ -306,11 +309,20 @@ span {
   fill: white;
 }
 
+.topbar--classic .hamburger__icon {
+  fill: var(--color-grey);
+}
 .topbar--classic #vinilisimo-logo {
   fill: var(--color-grey);
 }
 .topbar--classic #shopping-cart {
   fill: var(--color-grey);
+}
+.topbar--classic nav a {
+  color: var(--color-grey);
+}
+.topbar--classic nav a:visited {
+  color: var(--color-grey);
 }
 
 .showMenu {
@@ -319,6 +331,28 @@ span {
           transform: translateY(0);
   -webkit-transition-delay: opacity 1s;
           transition-delay: opacity 1s;
+}
+
+.topbar--scroll {
+  background-color: var(--background-color);
+  border-bottom: dashed var(--color-grey);
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+.topbar--scroll .hamburger__icon {
+  fill: var(--color-grey);
+}
+.topbar--scroll #vinilisimo-logo {
+  fill: var(--color-grey);
+}
+.topbar--scroll #shopping-cart {
+  fill: var(--color-grey);
+}
+.topbar--scroll nav a {
+  color: var(--color-grey);
+}
+.topbar--scroll nav a:visited {
+  color: var(--color-grey);
 }
 
 @media screen and (min-width: 900px) {
@@ -341,6 +375,7 @@ span {
     background-color: transparent;
     width: auto;
     height: auto;
+    border-bottom: none;
   }
   .nav__left__item {
     margin: 0;
