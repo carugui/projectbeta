@@ -18,8 +18,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-
-
+const topbar = document.querySelector(".topbar");
 const menu = document.querySelector(".nav__left");
 const menuItems = document.querySelectorAll(".nav__left__item");
 const hamburger= document.querySelector(".hamburger");
@@ -31,10 +30,12 @@ function toggleMenu() {
     menu.classList.remove("showMenu");
     closeIcon.style.display = "none";
     menuIcon.style.display = "block";
+    topbar.classList.remove("topbar--classic");
   } else {
     menu.classList.add("showMenu");
     closeIcon.style.display = "block";
     menuIcon.style.display = "none";
+    topbar.classList.add("topbar--classic");
   }
 }
 

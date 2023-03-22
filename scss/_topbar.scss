@@ -43,6 +43,7 @@ $topbar-color: var(--color-grey);
 }
   
 .hamburger__icon--close {
+    fill: $topbar-color;
     display: none;
 }
 
@@ -75,6 +76,8 @@ $topbar-color: var(--color-grey);
     transform: translateY(0);
     transition-delay: opacity 1s;
 }
+
+
 
 
 // Nav__middle
@@ -146,6 +149,18 @@ $topbar--white-color: white;
 
 }
 
+
+.topbar--classic {
+
+    & #vinilisimo-logo {
+        fill: $topbar-color;
+    }
+
+    & #shopping-cart {
+        fill: $topbar-color;
+    }
+
+}
   
 .showMenu {
     opacity: 1;

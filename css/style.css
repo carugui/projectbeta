@@ -209,6 +209,7 @@ span {
 }
 
 .hamburger__icon--close {
+  fill: var(--color-grey);
   display: none;
 }
 
@@ -303,6 +304,13 @@ span {
 }
 .topbar--white #shopping-cart {
   fill: white;
+}
+
+.topbar--classic #vinilisimo-logo {
+  fill: var(--color-grey);
+}
+.topbar--classic #shopping-cart {
+  fill: var(--color-grey);
 }
 
 .showMenu {
