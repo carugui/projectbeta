@@ -445,8 +445,14 @@ header {
   padding: 15px 30px;
 }
 
+@media screen and (min-width: 900px) {
+  header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .header__content {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 header p {
