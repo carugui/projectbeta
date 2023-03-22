@@ -24,3 +24,12 @@ img {
     width: 100%;
     object-fit: contain;
 }
+
+@media screen and (min-width: $bp-desktop) {
+
+    main > section {
+        padding: 90px 120px;
+        margin-bottom: $unit-double*2;
+    }
+
+}

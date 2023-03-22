@@ -53,6 +53,12 @@ img {
      object-fit: contain;
 }
 
+@media screen and (min-width: 900px) {
+  main > section {
+    padding: 90px 120px;
+    margin-bottom: 60px;
+  }
+}
 /* COLORES */
 /* greens */
 .color-green {
