@@ -34,6 +34,10 @@ header p {
     flex-wrap: wrap;
     align-content: center;
     border-radius: 0px 0px 30px 30px;
+
+    & h1 {
+        margin-bottom: 0.4em;
+    }
 }
 
 
