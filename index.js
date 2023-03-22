@@ -62,4 +62,3 @@ window.onscroll = function () {
         topbar.classList.remove("topbar--scroll");
     }
 };
-

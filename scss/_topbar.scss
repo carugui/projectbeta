@@ -190,6 +190,7 @@ $topbar--white-color: white;
     background-color: var(--background-color);
     border-bottom: dashed $topbar-color;
     transition: background-color 200ms linear;
+    transition: border-bottom 200ms linear;
 
     & .hamburger__icon {
         fill: $topbar-color;

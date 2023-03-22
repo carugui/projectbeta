@@ -338,6 +338,8 @@ span {
   border-bottom: dashed var(--color-grey);
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
+  -webkit-transition: border-bottom 200ms linear;
+  transition: border-bottom 200ms linear;
 }
 .topbar--scroll .hamburger__icon {
   fill: var(--color-grey);
