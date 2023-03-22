@@ -188,6 +188,9 @@ span {
   width: 100vw;
   padding: 15px 30px;
 }
+.topbar .btn {
+  color: white;
+}
 .topbar nav a {
   color: var(--color-grey);
   text-decoration: none;
@@ -214,10 +217,25 @@ span {
   display: none;
   position: fixed;
   top: 50px;
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
 }
 .nav__left a {
   color: var(--color-grey);
   text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+#topbar__toggle:checked + .nav__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #topbar__toggle:checked + .nav__left {
@@ -258,13 +276,14 @@ span {
 .topbar--white #topbar__label {
   fill: white;
 }
+.topbar--white .btn {
+  color: var(--color-grey);
+  background-color: white;
+}
 .topbar--white nav a {
   color: white;
 }
 .topbar--white nav a:visited {
-  color: white;
-}
-.topbar--white .nav__left a {
   color: white;
 }
 .topbar--white #vinilisimo-logo {
@@ -276,7 +295,18 @@ span {
 
 @media screen and (min-width: 900px) {
   .nav__left {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
   }
   #topbar__label {
     display: none;

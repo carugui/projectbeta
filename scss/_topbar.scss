@@ -15,9 +15,14 @@ $topbar-color: var(--color-grey);
     width: 100vw;
     padding: $padding;
 
+    & .btn {
+        color: white;
+    }
+
     & nav a {
         color: $topbar-color;
         text-decoration: none;
+        
     
         &:visited {
             color: $topbar-color;
@@ -40,17 +45,26 @@ $topbar-color: var(--color-grey);
     height: 24px;
 }
 
-
-
 .nav__left {
     display: none;
     position: fixed;
     top: 50px;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    
         
     & a {
         color: $topbar-color;
         text-decoration: none;
+        font-size: 1.25rem;
+        font-weight: 800;
     }
+}
+
+#topbar__toggle:checked + .nav__left{
+    display: flex;
+    flex-direction: column;
 }
 
 #topbar__toggle:checked + .nav__left{
@@ -66,7 +80,7 @@ $topbar-color: var(--color-grey);
 }
 
 #shopping-cart {
-    fill: $topbar-color
+    fill: $topbar-color;
 }
 
 #nav__right__make-your-vinyl {
@@ -86,17 +100,19 @@ $topbar--white-color: white;
         fill: $topbar--white-color;
     }
 
+    & .btn {
+        color: var(--color-grey);
+        background-color: $topbar--white-color;
+    }
+
     & nav a {
         color: $topbar--white-color;
     
         &:visited {
-            color:$topbar--white-color;
+            color: $topbar--white-color;
         }
     }
 
-    .nav__left a {
-        color: $topbar--white-color;
-    }
 
     #vinilisimo-logo {
         fill: $topbar--white-color;
@@ -108,10 +124,17 @@ $topbar--white-color: white;
 
 }
 
+
 @media screen and (min-width: $bp-desktop) {
 
     .nav__left {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        gap: $unit-double;
+        position: static;
+        background-color: transparent;
+        width: auto;
+        height: auto;
     }
 
     #topbar__label {
