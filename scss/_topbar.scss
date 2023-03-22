@@ -4,7 +4,6 @@
 $topbar-color: var(--color-grey);
 
 
-
 .topbar {
     background-color: var(--background-color);
     display: flex;
@@ -31,48 +30,67 @@ $topbar-color: var(--color-grey);
 
 }
 
+
+// Nav__left
+
+.hamburger {
+    z-index: 100;
+    cursor: pointer;
+}
+
+.hamburger__icon {
+    fill: $topbar-color;
+}
+  
+.hamburger__icon--close {
+    display: none;
+}
+
+.nav__left {
+    opacity: 0;
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    transition-delay: opacity 1s;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+
+    &__item {
+        display: block;
+        margin: 2rem 4rem;
+        font-size: 1.8rem;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.showMenu {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: opacity 1s;
+}
+
+
+// Nav__middle
+
+.nav__middle {
+    z-index: 100;
+}
 #vinilisimo-logo {
     fill: $topbar-color;
 }
 
-#topbar__toggle {  
-    display: none;
-    fill: $topbar-color;
-}
 
-#topbar__label {
-    color: $topbar-color;
-    height: 24px;
-}
-
-.nav__left {
-    display: none;
-    position: fixed;
-    top: 50px;
-    background-color: var(--background-color);
-    width: 100vw;
-    height: 100vh;
-    
-        
-    & a {
-        color: $topbar-color;
-        text-decoration: none;
-        font-size: 1.25rem;
-        font-weight: 800;
-    }
-}
-
-#topbar__toggle:checked + .nav__left{
-    display: flex;
-    flex-direction: column;
-}
-
-#topbar__toggle:checked + .nav__left{
-    display: flex;
-    flex-direction: column;
-}
+// Nav__right
 
 .nav__right {
+    z-index: 100;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -114,6 +132,10 @@ $topbar--white-color: white;
     }
 
 
+    .hamburger__icon {
+        fill: $topbar--white-color;
+    }
+
     #vinilisimo-logo {
         fill: $topbar--white-color;
     }
@@ -124,10 +146,20 @@ $topbar--white-color: white;
 
 }
 
+  
+.showMenu {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: opacity 1s;
+}
 
 @media screen and (min-width: $bp-desktop) {
 
     .nav__left {
+        transform: 0;
+        transform: none;
+        padding: 0;
+        opacity: 1;
         display: flex;
         flex-direction: row;
         gap: $unit-double;
@@ -135,6 +167,10 @@ $topbar--white-color: white;
         background-color: transparent;
         width: auto;
         height: auto;
+
+        &__item {
+            margin: 0;
+        }
     }
 
     #topbar__label {
@@ -147,6 +183,12 @@ $topbar--white-color: white;
 
     #nav__left__make-your-vinyl {
         display: none;
+    }
+
+    .hamburger {
+        display: none;
+        padding: 4px;
+        cursor: pointer;
     }
 
 }

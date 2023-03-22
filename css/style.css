@@ -199,56 +199,65 @@ span {
   color: var(--color-grey);
 }
 
+.hamburger {
+  z-index: 100;
+  cursor: pointer;
+}
+
+.hamburger__icon {
+  fill: var(--color-grey);
+}
+
+.hamburger__icon--close {
+  display: none;
+}
+
+.nav__left {
+  opacity: 0;
+  position: fixed;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transition-delay: opacity 1s;
+          transition-delay: opacity 1s;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+.nav__left__item {
+  display: block;
+  margin: 2rem 4rem;
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.showMenu {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: opacity 1s;
+          transition-delay: opacity 1s;
+}
+
+.nav__middle {
+  z-index: 100;
+}
+
 #vinilisimo-logo {
   fill: var(--color-grey);
 }
 
-#topbar__toggle {
-  display: none;
-  fill: var(--color-grey);
-}
-
-#topbar__label {
-  color: var(--color-grey);
-  height: 24px;
-}
-
-.nav__left {
-  display: none;
-  position: fixed;
-  top: 50px;
-  background-color: var(--background-color);
-  width: 100vw;
-  height: 100vh;
-}
-.nav__left a {
-  color: var(--color-grey);
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 800;
-}
-
-#topbar__toggle:checked + .nav__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#topbar__toggle:checked + .nav__left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .nav__right {
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,6 +295,9 @@ span {
 .topbar--white nav a:visited {
   color: white;
 }
+.topbar--white .hamburger__icon {
+  fill: white;
+}
 .topbar--white #vinilisimo-logo {
   fill: white;
 }
@@ -293,8 +305,22 @@ span {
   fill: white;
 }
 
+.showMenu {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition-delay: opacity 1s;
+          transition-delay: opacity 1s;
+}
+
 @media screen and (min-width: 900px) {
   .nav__left {
+    -webkit-transform: 0;
+            transform: 0;
+    -webkit-transform: none;
+            transform: none;
+    padding: 0;
+    opacity: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -308,6 +334,9 @@ span {
     width: auto;
     height: auto;
   }
+  .nav__left__item {
+    margin: 0;
+  }
   #topbar__label {
     display: none;
   }
@@ -316,6 +345,11 @@ span {
   }
   #nav__left__make-your-vinyl {
     display: none;
+  }
+  .hamburger {
+    display: none;
+    padding: 4px;
+    cursor: pointer;
   }
 }
 header {
