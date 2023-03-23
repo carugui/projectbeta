@@ -39,10 +39,29 @@
 
 }
 
-.section__playlist-to-vinyl img {
-    width: 230px;
-    object-fit: scale-down;
+.section__playlist-to-vinyl {
+    overflow: hidden;
+
+    & img {
+        width: 230px;
+        object-fit: scale-down;
+    }
 }
+
+@media screen and (min-width: $bp-desktop) {
+
+    .section__playlist-to-vinyl {
+    
+        & .img-vinilo {
+            transform: translateX(50vw) translateY(-231px);
+            
+        }
+    }
+
+}
+
+
+
 
 .section__playlist-to-vinyl p, .section__reviews p {
     font-family: 'Gloria Hallelujah';

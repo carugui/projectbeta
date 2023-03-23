@@ -752,6 +752,33 @@ button:hover,
   background-color: var(--color-orange);
 }
 
+.rotate {
+  width: 100px;
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
 .waves {
   fill: var(--color-yellow-light);
   position: relative;
@@ -827,12 +854,21 @@ button:hover,
   gap: 15px;
 }
 
+.section__playlist-to-vinyl {
+  overflow: hidden;
+}
 .section__playlist-to-vinyl img {
   width: 230px;
   -o-object-fit: scale-down;
      object-fit: scale-down;
 }
 
+@media screen and (min-width: 900px) {
+  .section__playlist-to-vinyl .img-vinilo {
+    -webkit-transform: translateX(50vw) translateY(-231px);
+            transform: translateX(50vw) translateY(-231px);
+  }
+}
 .section__playlist-to-vinyl p, .section__reviews p {
   font-family: "Gloria Hallelujah";
   font-weight: 400;
