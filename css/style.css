@@ -396,6 +396,10 @@ span {
 .topbar--scroll nav a:visited {
   color: var(--color-grey);
 }
+.topbar--scroll .btn {
+  background-color: var(--color-green-dark);
+  color: white;
+}
 
 @media screen and (min-width: 900px) {
   .topbar {
