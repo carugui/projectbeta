@@ -58,25 +58,34 @@ header p {
 
 .header__wave {
     padding: 0;
-}
-.header__wave .header__content {
-    background-color: var(--color-green);
-    color: white;
-    text-align: center;
-    padding: $padding;
-    padding-top: $unit-double;
+
+    & .header__content {
+        background-color: var(--color-green);
+        color: white;
+        text-align: center;
+        padding: $padding;
+        padding-top: $unit-double * 3;
+        max-width: none;
+
+        & > * {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .waves {
+        fill: var(--color-green);
+    }
 }
 
-.header__wave .waves {
-    fill: var(--color-green);
-}
 
 
 // HEADER CLASSIC (CONTACT, BLOG)
 
 .header__classic {
     text-align: center;
-    padding-top: $unit-double;
+    padding-top: $unit-double * 3;
     
     & .header__content {
         margin: auto;

@@ -496,22 +496,26 @@ header p {
 .header__wave {
   padding: 0;
 }
-
 .header__wave .header__content {
   background-color: var(--color-green);
   color: white;
   text-align: center;
   padding: 15px 30px;
-  padding-top: 30px;
+  padding-top: 90px;
+  max-width: none;
 }
-
+.header__wave .header__content > * {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .header__wave .waves {
   fill: var(--color-green);
 }
 
 .header__classic {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 90px;
 }
 .header__classic .header__content {
   margin: auto;
