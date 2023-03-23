@@ -19,6 +19,8 @@ $unit: 15px;
 $unit-double: $unit * 2;
 $padding: $unit $unit-double;
 
+$padding-desktop: $unit*6 $unit-double*4;
+
 .no-padding {
     padding: 0;
 }

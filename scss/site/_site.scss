@@ -28,7 +28,7 @@ img {
 @media screen and (min-width: $bp-desktop) {
 
     main > section {
-        padding: 90px 120px;
+        padding: $padding-desktop;
         margin-bottom: $unit-double*2;
     }
 
