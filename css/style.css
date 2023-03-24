@@ -304,6 +304,10 @@ span {
   color: white;
   text-decoration: none;
 }
+.nav__left ul {
+  padding: none;
+  margin: none;
+}
 
 .showMenu {
   opacity: 1;

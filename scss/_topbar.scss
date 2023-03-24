@@ -80,6 +80,11 @@ $topbar-color: var(--color-grey);
         color: white;
         text-decoration: none;
     }
+
+    & ul {
+        padding: none;
+        margin: none;
+    }
 }
 
 .showMenu {
