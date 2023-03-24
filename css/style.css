@@ -455,6 +455,12 @@ span {
   .nav__left__item {
     margin: 0;
   }
+  .nav__left ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
   #topbar__label {
     display: none;
   }

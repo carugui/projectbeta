@@ -257,6 +257,11 @@ $topbar--white-color: white;
         &__item {
             margin: 0;
         }
+
+        & ul {
+            display: flex; 
+            gap: $unit-double;
+        }
     }
 
     #topbar__label {
