@@ -305,8 +305,8 @@ span {
   text-decoration: none;
 }
 .nav__left ul {
-  padding: none;
-  margin: none;
+  padding: 0;
+  margin: 0;
 }
 
 .showMenu {
