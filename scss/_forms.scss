@@ -14,7 +14,6 @@
     }
 
     &__upper-inputs {
-        display: flex;
         gap: 15px;
     }
 
@@ -57,4 +56,17 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 textarea {
     height: 240px;
     font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (min-width: $bp-desktop) {
+
+    .form__main {
+
+        &__upper-inputs {
+            display: flex;
+            alg
+        }
+
+    }
+
 }

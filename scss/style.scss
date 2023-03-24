@@ -139,8 +139,41 @@
 
 // SECCIONES FORM
 
-.section__form img {
-    width: 170px;
+.section__form { 
+
+    & .form_outter {
+        display: flex;
+        max-width: $max-width__page;
+        margin: auto;
+    }
+
+    & img {
+        width: 170px;
+    }
+
+}
+
+@media screen and (min-width: $bp-desktop) {
+
+    .section__form { 
+
+        &__content {
+            width: 100%;
+        }
+
+        & .form_outter {
+            display: flex;
+            align-items: center;
+            gap: $unit-double*2;
+        }
+
+        & img {
+            width: auto;
+            max-width: 350px;
+        }
+    
+    }
+
 }
 
 // SECCIONES BLOG

@@ -733,6 +733,13 @@ textarea {
   font-family: "Nunito", sans-serif;
 }
 
+@media screen and (min-width: 900px) {
+  .form__main__upper-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 a {
   color: #FC8455;
   text-decoration: underline;
@@ -978,10 +985,35 @@ button:hover,
   text-transform: uppercase;
 }
 
+.section__form .form_outter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
 .section__form img {
   width: 170px;
 }
 
+@media screen and (min-width: 900px) {
+  .section__form__content {
+    width: 100%;
+  }
+  .section__form .form_outter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
+  .section__form img {
+    width: auto;
+    max-width: 350px;
+  }
+}
 .section__blog {
   display: -webkit-box;
   display: -ms-flexbox;
