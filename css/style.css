@@ -550,7 +550,7 @@ header p {
   text-align: center;
   padding: 15px 30px;
   margin-bottom: 30px;
-  max-width: 440px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -688,9 +688,6 @@ footer ul {
       align-self: stretch;
 }
 .form__main__upper-inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 15px;
 }
 .form__main__input {
@@ -986,9 +983,6 @@ button:hover,
 }
 
 .section__form .form_outter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 1200px;
   margin: auto;
 }
@@ -1010,7 +1004,10 @@ button:hover,
     gap: 60px;
   }
   .section__form img {
-    width: auto;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
     max-width: 350px;
   }
 }
@@ -1020,9 +1017,9 @@ button:hover,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1052,6 +1049,17 @@ button:hover,
   margin: 1.6rem 0;
 }
 
+@media screen and (min-width: 900px) {
+  .section__blog h2 {
+    font-size: 2rem;
+  }
+  .section__blog p {
+    font-size: 1.2rem;
+  }
+  .section__blog .article__blog--thumbnail {
+    max-width: 360px;
+  }
+}
 .section__FAQ .accordion-container {
   max-width: 1200px;
   margin: auto;

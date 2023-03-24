@@ -142,7 +142,6 @@
 .section__form { 
 
     & .form_outter {
-        display: flex;
         max-width: $max-width__page;
         margin: auto;
     }
@@ -168,7 +167,9 @@
         }
 
         & img {
-            width: auto;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
             max-width: 350px;
         }
     
@@ -181,9 +182,8 @@
 .section__blog {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-
     gap: $unit-double*2;
 }
 
@@ -219,7 +219,24 @@
     }
 }
 
+@media screen and (min-width: $bp-desktop) {
 
+    .section__blog {
+
+        & h2 {
+            font-size: 2rem;
+        }
+
+        & p {
+            font-size: 1.2rem;
+        }
+
+        & .article__blog--thumbnail {
+            max-width: 360px;
+        }
+    }
+
+}
 
 
 
