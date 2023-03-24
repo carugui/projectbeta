@@ -20,6 +20,8 @@ $topbar-color: var(--color-grey);
         justify-content: space-between;
         align-items: center;
         width: 100vw;
+        max-width: $max-width__page;
+        margin: auto;
     }
 
     & .btn {
