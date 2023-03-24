@@ -967,6 +967,11 @@ button:hover,
   text-transform: uppercase;
 }
 
+.section__what-is {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .section__our-mission {
   background-color: var(--color-yellow-light);
   border-radius: 30px;
@@ -982,6 +987,14 @@ button:hover,
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 900px) {
+  .section__our-mission__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
 .section__form .form_outter {
   max-width: 1200px;
   margin: auto;
