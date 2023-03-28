@@ -1,3 +1,20 @@
+// PARA LAS REVIEWS DE LA LANDING
+
+const wrapper = document.querySelector('.reviews__wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
+
+let currentTestimonial = 0; // Default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('button--active');
+        wrapper.style.marginLeft = `-${60 * i}%`;
+        item.classList.add('button--active');
+        currentTestimonial = i;
+    })
+})
+
+
 // PARA LOS ACORDEONES DEL FAQ
 
 var acc = document.getElementsByClassName("accordion");

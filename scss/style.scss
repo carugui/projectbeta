@@ -115,8 +115,98 @@
 .section__playlist-to-vinyl p, .section__reviews p {
     font-family: 'Gloria Hallelujah';
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+
+.section__reviews {
+
+    padding: 0;
+
+    & h2 {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    & .review__link {
+        text-decoration: none;
+        font-size: 1.3rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &__1, .review__link__1:visited {
+            color: var(--color-green);
+        }
+
+        &__2, .review__link__2:visited {
+            color: var(--color-purple);
+        }
+
+        &__3, .review__link__3:visited {
+            color: var(--color-blue);
+        }
+    }
+
+    &__content {
+        position: relative;
+        width: 100vw;
+        min-width: 350px;
+        min-height: 250px;
+        padding-bottom: 40px;
+        overflow: hidden;
+    }
+
+    & .reviews__wrapper {
+        width: 220%;
+        /* 300% 'caz we have 3 cards */
+        min-height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        transition: 1s;
+        padding: 0 10%;
+    }
+
+    & .reviews__card {
+        width: 600px;
+        min-height: 100%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0 10px;
+    }
+
+    .indicators{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .indicators button{
+        padding: 0;
+        background: none;
+        border: none;
+        outline: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid var(--color-grey-light);
+        cursor: pointer;
+        margin-left: 5px;
+        transition: .5s;
+    }
+    
+    button.button--active{
+        width: 40px;
+        border-radius: 50px;
+        background: var(--color-grey-light);
+    }
 }
 
 // SECCIONES ABOUT
@@ -178,10 +268,16 @@
             width: 100%;
         }
 
-        & .form_outter {
+        & .form_outter, > .wp-block-group__inner-container {
             display: flex;
             align-items: center;
             gap: $unit-double*2;
+
+            & > .wp-block-group__inner-container {
+                display: flex;
+                align-items: center;
+                gap: $unit-double*2;
+            }
         }
 
         & img {
@@ -237,6 +333,9 @@
     }
 }
 
+
+
+
 @media screen and (min-width: $bp-desktop) {
 
     .section__blog {
@@ -276,6 +375,35 @@
 }
 
 
+// SECCION PRODUCTO
+
+.section__product {
+
+    & .iframe {
+        border: none;
+    }
+    & .displayer-controls__powered-by {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: $bp-desktop) {
+
+    .section__product {
+
+        margin-top: 50px;
+
+        & .iframe {
+            padding-left: 115px;
+        }
+
+    } 
+
+}
+
+
+// SECCION FAQ
 
 .section__FAQ {
     
@@ -343,6 +471,12 @@
 }
 
 
+// SECCION CARRITO
+
+.section__cart > div {
+    max-width: $max-width__page;
+    margin: auto;
+}
 
 
 

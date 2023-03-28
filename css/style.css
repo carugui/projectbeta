@@ -11,6 +11,7 @@
   --color-blue: #37A3BB;
   --color-purple: #BB56C4;
   --color-grey: #494949;
+  --color-grey-light: #8E8E8E;
   --color-cream: #FFF8ED;
   /* Implementations */
   --background-color: var(--color-cream);
@@ -744,6 +745,21 @@ textarea {
   font-family: "Nunito", sans-serif;
 }
 
+.wpcf7-form {
+  width: 100%;
+  text-align: left;
+}
+.wpcf7-form p {
+  margin: 0;
+  width: 100%;
+}
+.wpcf7-form input {
+  width: 100%;
+}
+.wpcf7-form textarea {
+  width: 100%;
+}
+
 @media screen and (min-width: 900px) {
   .form__main__upper-inputs {
     display: -webkit-box;
@@ -977,8 +993,100 @@ button:hover,
 .section__playlist-to-vinyl p, .section__reviews p {
   font-family: "Gloria Hallelujah";
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+.section__reviews {
+  padding: 0;
+}
+.section__reviews h2 {
+  max-width: 700px;
+  margin: auto;
+}
+.section__reviews .review__link {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.section__reviews .review__link:hover {
+  text-decoration: underline;
+}
+.section__reviews .review__link__1, .section__reviews .review__link .review__link__1:visited {
+  color: var(--color-green);
+}
+.section__reviews .review__link__2, .section__reviews .review__link .review__link__2:visited {
+  color: var(--color-purple);
+}
+.section__reviews .review__link__3, .section__reviews .review__link .review__link__3:visited {
+  color: var(--color-blue);
+}
+.section__reviews__content {
+  position: relative;
+  width: 100vw;
+  min-width: 350px;
+  min-height: 250px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.section__reviews .reviews__wrapper {
+  width: 220%;
+  /* 300% 'caz we have 3 cards */
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 0 10%;
+}
+.section__reviews .reviews__card {
+  width: 600px;
+  min-height: 100%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin: 0 10px;
+}
+.section__reviews .indicators {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.section__reviews .indicators button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--color-grey-light);
+  cursor: pointer;
+  margin-left: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.section__reviews button.button--active {
+  width: 40px;
+  border-radius: 50px;
+  background: var(--color-grey-light);
 }
 
 .section__what-is {
@@ -1021,7 +1129,16 @@ button:hover,
   .section__form__content {
     width: 100%;
   }
-  .section__form .form_outter {
+  .section__form .form_outter, .section__form > .wp-block-group__inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
+  .section__form .form_outter > .wp-block-group__inner-container, .section__form > .wp-block-group__inner-container > .wp-block-group__inner-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1108,6 +1225,21 @@ button:hover,
     margin: auto;
   }
 }
+.section__product .iframe {
+  border: none;
+}
+.section__product .displayer-controls__powered-by {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .section__product {
+    margin-top: 50px;
+  }
+  .section__product .iframe {
+    padding-left: 115px;
+  }
+}
 .section__FAQ .accordion-container {
   max-width: 1200px;
   margin: auto;
@@ -1162,4 +1294,9 @@ button:hover,
 
 .active:after {
   content: "➖"; /* Unicode character for "minus" sign (-) */
+}
+
+.section__cart > div {
+  max-width: 1200px;
+  margin: auto;
 }

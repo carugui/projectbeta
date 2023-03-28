@@ -58,6 +58,24 @@ textarea {
     font-family: 'Nunito', sans-serif;
 }
 
+.wpcf7-form {
+    width: 100%;
+    text-align: left;
+
+    & p {
+        margin: 0;
+        width: 100%;
+    }
+
+    & input {
+        width: 100%;
+    }   
+
+    & textarea {
+        width: 100%;
+    } 
+}
+
 @media screen and (min-width: $bp-desktop) {
 
     .form__main {
