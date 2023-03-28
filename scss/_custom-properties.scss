@@ -32,3 +32,17 @@ $padding-desktop: $unit*6 $unit-double*4;
 
 $max-width__page: 1200px;
 $bp-desktop: 900px;
+
+
+// SUPER UTIL PARA POSICIONES DE Z-INDEX
+$map-layers: (
+    "below":        -1,
+    "default":      0,
+    "above":        1,
+    "over":         2,
+    "absolute":     3
+);
+
+@function z($layer) {
+    @return map-get($map-layers, $layer);
+}

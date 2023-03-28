@@ -14,6 +14,7 @@ $topbar-color: var(--color-grey);
     align-items: center;
     width: 100vw;
     padding: $padding;
+    z-index: z(absolute);
 
     &__content {
         display: flex;

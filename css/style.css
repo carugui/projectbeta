@@ -241,6 +241,7 @@ span {
           align-items: center;
   width: 100vw;
   padding: 15px 30px;
+  z-index: 3;
 }
 .topbar__content {
   display: -webkit-box;
@@ -993,16 +994,22 @@ button:hover,
 .section__playlist-to-vinyl p, .section__reviews p {
   font-family: "Gloria Hallelujah";
   font-weight: 400;
-  font-size: 1.2rem;
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
+@media screen and (min-width: 900px) {
+  .section__playlist-to-vinyl p, .section__reviews p {
+    font-size: 1.2rem;
+  }
+}
 .section__reviews {
   padding: 0;
 }
 .section__reviews h2 {
   max-width: 700px;
   margin: auto;
+  padding: 0 20px;
 }
 .section__reviews .review__link {
   text-decoration: none;
