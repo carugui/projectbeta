@@ -1122,6 +1122,13 @@ button:hover,
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
+    /* Esta clase es para que funcione en WORDPRES */
+  }
+  .section__our-mission__content > .wp-block-group__inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
   }
 }
 .section__form .form_outter {
@@ -1176,6 +1183,17 @@ button:hover,
           justify-content: center;
   gap: 60px;
 }
+.section__blog .blog__link {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+.section__blog .blog__link:hover {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+.section__blog .blog__link:visited {
+  color: var(--color-grey);
+}
 
 .article__blog--thumbnail, .article__blog--single {
   margin-bottom: 30px;
@@ -1201,6 +1219,11 @@ button:hover,
 }
 
 @media screen and (min-width: 900px) {
+  .section__blog {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   .section__blog h2 {
     font-size: 2rem;
   }
@@ -1209,6 +1232,12 @@ button:hover,
   }
   .section__blog .article__blog--thumbnail {
     max-width: 360px;
+  }
+  .section__blog .article__blog--thumbnail img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 360px;
+    height: 360px;
   }
   .article__blog--single {
     display: -webkit-box;

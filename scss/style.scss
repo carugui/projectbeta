@@ -246,6 +246,12 @@
         &__content {
             display: flex;
             gap: 30px;
+
+            /* Esta clase es para que funcione en WORDPRES */
+            & > .wp-block-group__inner-container {
+                display: flex;
+                gap: 30px;
+            }
         }
 
     }
@@ -307,6 +313,20 @@
     align-items: center;
     justify-content: center;
     gap: $unit-double*2;
+
+    & .blog__link {
+        color: var(--color-grey);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--color-grey);
+            text-decoration: none;
+        }
+
+        &:visited {
+            color: var(--color-grey);
+        }
+    }
 }
 
 .article__blog--thumbnail, .article__blog--single {
@@ -347,6 +367,7 @@
 @media screen and (min-width: $bp-desktop) {
 
     .section__blog {
+        align-items: flex-start;
 
         & h2 {
             font-size: 2rem;
@@ -358,6 +379,12 @@
 
         & .article__blog--thumbnail {
             max-width: 360px;
+
+            & img {
+                object-fit: cover;
+                width: 360px;
+                height: 360px;
+            }
         }
     }
 
