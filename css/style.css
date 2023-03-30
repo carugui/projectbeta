@@ -1266,21 +1266,6 @@ button:hover,
     margin: auto;
   }
 }
-.section__product .iframe {
-  border: none;
-}
-.section__product .displayer-controls__powered-by {
-  display: none;
-}
-
-@media screen and (min-width: 900px) {
-  .section__product {
-    margin-top: 50px;
-  }
-  .section__product .iframe {
-    padding-left: 115px;
-  }
-}
 .section__FAQ .accordion-container {
   max-width: 1200px;
   margin: auto;
@@ -1337,6 +1322,21 @@ button:hover,
   content: "➖"; /* Unicode character for "minus" sign (-) */
 }
 
+.section__product .iframe {
+  border: none;
+}
+.section__product .displayer-controls__powered-by {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .section__product {
+    margin-top: 50px;
+  }
+  .section__product .iframe {
+    padding-left: 115px;
+  }
+}
 .section__cart > div {
   max-width: 1200px;
   margin: auto;
