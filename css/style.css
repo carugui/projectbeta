@@ -986,9 +986,14 @@ button:hover,
 }
 
 @media screen and (min-width: 900px) {
+  .section__playlist-to-vinyl {
+    overflow-x: hidden;
+  }
   .section__playlist-to-vinyl .img-vinilo {
-    -webkit-transform: translateX(50vw) translateY(-231px);
-            transform: translateX(50vw) translateY(-231px);
+    -webkit-transform: translateX(88vw) translateY(-286px);
+            transform: translateX(88vw) translateY(-286px);
+    position: absolute;
+    overflow: hidden;
   }
 }
 .section__playlist-to-vinyl p, .section__reviews p {
