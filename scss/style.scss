@@ -12,56 +12,13 @@
 @import "_svg-animations";
 @import "site/_index";
 @import "site/_about";
+@import "site/_contacto";
 
 
 
 
 
-// SECCIONES FORM
 
-.section__form { 
-
-    & .form_outter {
-        max-width: $max-width__page;
-        margin: auto;
-    }
-
-    & img {
-        width: 170px;
-    }
-
-}
-
-@media screen and (min-width: $bp-desktop) {
-
-    .section__form { 
-
-        &__content {
-            width: 100%;
-        }
-
-        & .form_outter, > .wp-block-group__inner-container {
-            display: flex;
-            align-items: center;
-            gap: $unit-double*2;
-
-            & > .wp-block-group__inner-container {
-                display: flex;
-                align-items: center;
-                gap: $unit-double*2;
-            }
-        }
-
-        & img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-            max-width: 350px;
-        }
-    
-    }
-
-}
 
 // SECCIONES BLOG
 
