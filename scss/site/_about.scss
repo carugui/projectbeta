@@ -1,0 +1,40 @@
+// SECCIONES ABOUT
+
+.section__what-is {
+    max-width: $max-width__page;
+    margin: auto;
+}
+
+.section__our-mission {
+    background-color: var(--color-yellow-light);
+    border-radius: 30px;
+    &__item {
+        margin-bottom: $unit-double;
+    }
+}
+
+.section__our-mission p {
+    font-family: 'Gloria Hallelujah';
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: $bp-desktop) {
+
+    .section__our-mission {
+
+        &__content {
+            display: flex;
+            gap: 30px;
+
+            /* Esta clase es para que funcione en WORDPRES */
+            & > .wp-block-group__inner-container {
+                display: flex;
+                gap: 30px;
+            }
+        }
+
+    }
+
+}
