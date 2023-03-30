@@ -975,6 +975,9 @@ button:hover,
 .section__playlist-to-vinyl {
   overflow: hidden;
 }
+.section__playlist-to-vinyl__content {
+  overflow: hidden;
+}
 .section__playlist-to-vinyl img {
   width: 230px;
   -o-object-fit: scale-down;

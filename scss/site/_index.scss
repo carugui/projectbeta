@@ -1,5 +1,8 @@
 // SECCIONES INDEX
 
+
+// sección cómo funciona
+
 .section__how-it-works__content {
     background: linear-gradient(180deg, #60B8CC 0%, rgba(55, 163, 187, 0) 100%);
 
@@ -66,9 +69,14 @@
 }
 
 
+// sección "pasa tu playlist a vinilo"
 
 .section__playlist-to-vinyl {
     overflow: hidden;
+
+    &__content {
+        overflow: hidden;
+    }
 
     & img {
         width: 230px;
@@ -112,6 +120,8 @@
     }
 }
 
+
+// sección "reviews"
 
 .section__reviews {
 
