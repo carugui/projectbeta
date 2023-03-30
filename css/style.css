@@ -229,7 +229,6 @@ span {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  top: 0;
   background-color: transparent;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;

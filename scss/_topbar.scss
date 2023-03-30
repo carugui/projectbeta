@@ -7,7 +7,6 @@ $topbar-color: var(--color-grey);
 .topbar {
     display: flex;
     position: fixed;
-    top: 0;
     background-color: transparent;
     transition: background-color 200ms linear;
     justify-content: space-between;
