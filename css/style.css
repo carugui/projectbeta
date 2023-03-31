@@ -31,6 +31,7 @@ body {
   color: var(--color-grey);
   font-weight: 400;
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 * {
@@ -259,6 +260,9 @@ span {
 .topbar .btn {
   color: white;
 }
+.topbar .btn:visited {
+  color: white;
+}
 .topbar nav a {
   color: var(--color-grey);
   text-decoration: none;
@@ -363,6 +367,12 @@ span {
   color: var(--color-grey);
   background-color: white;
 }
+.topbar--white .btn:visited {
+  color: var(--color-grey);
+}
+.topbar--white .btn:hover {
+  background-color: rgb(223, 223, 223);
+}
 .topbar--white nav a {
   color: white;
 }
@@ -429,6 +439,12 @@ span {
 .topbar--scroll .btn {
   background-color: var(--color-green-dark);
   color: white;
+}
+.topbar--scroll .btn:visited {
+  color: white;
+}
+.topbar--scroll .btn:hover {
+  background-color: var(--color-green);
 }
 
 @media screen and (min-width: 900px) {

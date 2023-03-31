@@ -26,6 +26,10 @@ $topbar-color: var(--color-grey);
 
     & .btn {
         color: white;
+        
+        &:visited {
+            color: white;
+        }
     }
 
     & nav a {
@@ -114,6 +118,8 @@ $topbar-color: var(--color-grey);
     flex-direction: row;
     align-items: center;
     gap: $unit-double;
+
+    
 }
 
 #shopping-cart {
@@ -140,6 +146,14 @@ $topbar--white-color: white;
     & .btn {
         color: var(--color-grey);
         background-color: $topbar--white-color;
+
+        &:visited {
+            color: var(--color-grey);
+        }
+
+        &:hover {
+            background-color: rgb(223, 223, 223);
+        }
     }
 
     & nav a {
@@ -229,6 +243,14 @@ $topbar--white-color: white;
     & .btn {
         background-color: var(--color-green-dark);
         color: white;
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            background-color: var(--color-green);
+        }
     }
 
 }
