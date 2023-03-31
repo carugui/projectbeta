@@ -48,6 +48,7 @@ footer ul {
     }
 
     &__lower {
+        margin-top: $unit;
         color: white;
         text-align: center;
     }
@@ -98,6 +99,10 @@ footer ul {
             justify-content: space-between;
             align-items: center;
 
+            & p {
+                display: flex;
+                order: -1;
+            }
         }
 
         &__nav ul {

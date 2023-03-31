@@ -627,6 +627,7 @@ footer ul {
   gap: 22px;
 }
 .main-footer__lower {
+  margin-top: 15px;
   color: white;
   text-align: center;
 }
@@ -695,6 +696,14 @@ footer ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main-footer__lower p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .main-footer__nav ul {
     -webkit-box-orient: vertical;
