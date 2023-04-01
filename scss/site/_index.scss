@@ -1,6 +1,40 @@
 // SECCIONES INDEX
 
 
+// sección artículos
+
+.section__articles {
+    padding-bottom: 0;
+    & img {
+        border-radius: 30px;
+        max-width: 690px;
+        min-width: 290px;
+    }
+}
+
+@media screen and (min-width: $bp-desktop) {
+
+    .section__articles__content {
+        display: flex;
+        text-align: right;
+        gap: $unit-double*2;
+        max-width: $max-width__page;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+
+        .section__articles__text {
+            max-width: 540px;
+            flex-grow: 1;
+
+            &-1 {
+                order: 1;
+                text-align: left;
+            }
+        }
+    }
+}
+
 // sección cómo funciona
 
 .section__how-it-works__content {
@@ -35,20 +69,6 @@
 }
 
 @media screen and (min-width: $bp-desktop) {
-
-    .section__articles__content {
-        display: flex;
-        text-align: right;
-        gap: $unit-double*2;
-        max-width: $max-width__page;
-        margin-left: auto;
-        margin-right: auto;
-
-        .section__articles__text-2 {
-            order: 1;
-            text-align: left;
-        }
-    }
 
     .how-it-works__steps {
 
