@@ -30,9 +30,18 @@ $padding-desktop: $unit*6 $unit-double*4;
     padding: $padding;
 }
 
+
 $max-width__page: 1200px;
 $bp-desktop: 900px;
 
+.max-width__page {
+    max-width: $max-width__page;
+    margin: auto;
+}
+
+.text-align-center {
+    text-align: center;
+}
 
 // SUPER UTIL PARA POSICIONES DE Z-INDEX
 $map-layers: (

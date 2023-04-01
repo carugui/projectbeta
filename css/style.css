@@ -25,6 +25,15 @@
   padding: 15px 30px;
 }
 
+.max-width__page {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -211,7 +220,7 @@ h6,
     font-size: 1rem;
   }
   p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 span {
