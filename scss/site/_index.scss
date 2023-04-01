@@ -14,7 +14,7 @@
 
 @media screen and (min-width: $bp-desktop) {
 
-    .section__articles__content {
+    .section__articles__content, .section__articles__content > .wp-block-group__inner-container {
         display: flex;
         text-align: right;
         gap: $unit-double*2;
@@ -23,15 +23,15 @@
         margin-right: auto;
         align-items: center;
 
-        .section__articles__text {
-            max-width: 540px;
-            flex-grow: 1;
+    .section__articles__text {
+        max-width: 540px;
+        flex-grow: 1;
 
-            &-1 {
-                order: 1;
-                text-align: left;
-            }
+        &-1 {
+            order: 1;
+            text-align: left;
         }
+    }
     }
 }
 
