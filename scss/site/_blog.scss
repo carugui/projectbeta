@@ -45,7 +45,7 @@
         font-family: 'Gloria Hallelujah', sans-serif;
     }
 
-    &__subheader {
+    &__subheader, .blog h2 {
         text-align: center;
         font-family: 'Gloria Hallelujah', sans-serif;
         text-transform: uppercase;
@@ -99,5 +99,12 @@
         }
     }
 
+    .blog {
+    
+        &__subheader, .blog h2 {
+            font-size: 1.8rem;
+            margin: 3rem;
+        }
+    }
 
 }

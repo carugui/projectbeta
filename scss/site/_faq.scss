@@ -41,6 +41,9 @@
     outline: none;
     transition: 0.4s;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -63,4 +66,18 @@
 
 .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+@media screen and (min-width: $bp-desktop) {
+
+    .section__FAQ {
+        & h2 {
+            font-size: 2rem;
+        }
+        .accordion {
+            font-size: 1.2rem;
+        }
+        
+    }
 }
